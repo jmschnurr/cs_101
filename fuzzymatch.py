@@ -124,25 +124,3 @@ def duplicate_remover(input_list, similarity_score):
     unique_list = np.unique(input_list)
            
     return unique_list
-
-if __name__ == '__main__':
-
-
-    df_best_buy = pd.read_excel("Best Buy Accused Products.xlsx", header=0, usecols="A:C", nrows=1581)
-    df_black_list = pd.read_excel("Best Buy Accused Products.xlsx", header=0, usecols="F", nrows=50)
-    
-    bestbuy_list = df_best_buy['Best Buy Brands'].tolist()
-    black_list = df_black_list['Blacklist'].tolist()
-
-    
-    df_results, df_goodmatch, df_badmatch = match_checker(bestbuy_list, black_list, similarity_score = 80.)
-
-    unique_list = duplicate_remover(black_list, similarity_score=80)
-    
-    excel_results(df_results, outfile_name='test2')
-
-
-
-    
-
-
