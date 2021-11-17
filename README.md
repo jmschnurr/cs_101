@@ -1,2 +1,1 @@
-# Data
-# Helpful functions and such
+Helpful functions and such for working with messy data
