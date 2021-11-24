@@ -1,1 +1,1 @@
-Helpful functions and such for working with messy data
+Helpful functions and such for cleaning messy data
