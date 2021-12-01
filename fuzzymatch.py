@@ -4,6 +4,9 @@
 Created on Tue Nov  9 22:50:48 2021
 
 @author: julie-schnurr
+
+uses the project: https://pypi.org/project/fuzzywuzzy/ 
+see the above link for info on Levenshtein_distance etc.
 """
 
 import pandas as pd
@@ -98,8 +101,8 @@ def match_checker(input_list, matchto_list, similarity_score):
 
 def duplicate_remover(input_list, similarity_score):
     
-    # Gets rid of fuzzy fuplicates using Levenshtein Distance (80 similarity
-    # score is a good place to start)
+    # Gets rid of fuzzy duplicates (fuplicates) using Levenshtein Distance 
+    # 80 similarity score is a good place to start (it works well for my use case but depends on the data being input)
     
     for idx, value in enumerate(input_list):
         # removing the instance we are checking for from the list
