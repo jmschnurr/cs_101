@@ -1,2 +1,2 @@
 - Fuzzymatch contains helpful functions and such for automated cleaning messy data <br />
-- Anything marked "assignment" are homework assignments or projects <br />
+- Anything marked "assignment" is a homework assignment or project <br />
