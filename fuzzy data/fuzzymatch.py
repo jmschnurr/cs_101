@@ -4,6 +4,9 @@
 Created on Tue Nov  9 22:50:48 2021
 
 @author: julie-schnurr
+
+uses the project: https://pypi.org/project/fuzzywuzzy/ 
+see the above link for info on Levenshtein_distance etc.
 """
 
 import pandas as pd
